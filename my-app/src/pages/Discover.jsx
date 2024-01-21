@@ -15,7 +15,7 @@ const Discover = () => {
     return (
       <Container fluid="md">
         <Row>
-          <Col md={9} className="offset-md-3 mainPage">
+          <Col md={9} className="offset-md-3 mainPage my-3">
             <Row>
               <Col md={9} lg={11} className="mainLinks d-none d-md-flex">
                 <Col>
@@ -98,6 +98,8 @@ const Discover = () => {
             </Row>
   
             {/*------------------------------------- WRAP MUSICA -------------------------------------*/}
+
+            
           </Col>
         </Row>
       </Container>
