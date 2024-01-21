@@ -1,5 +1,5 @@
 
-import { createslice } from '@reduxjs/toolkit'
+ import { createSlice } from '@reduxjs/toolkit'
 
 const initialstate = {
 currentSongs: [],
@@ -10,7 +10,7 @@ activeSong: {},
 genreListId: "",
 };
 
-const playerslice = createslice({
+const playerslice = createSlice({
 name: 'player',
 initialstate,
 reducers: {

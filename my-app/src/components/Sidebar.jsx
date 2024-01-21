@@ -3,7 +3,7 @@ import React from "react";
 /* BOOSTRAP */
 
 import Button from 'react-bootstrap/Button';
-
+import { House, Book } from "react-bootstrap-icons"
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -48,7 +48,7 @@ function Sidebar() {
                         className="nav-item nav-link d-flex align-items-center"
                         href="#"
                       >
-                        &nbsp; Home
+                        <House size={35} />&nbsp; Home
                       </a>
                     </li>
                     <li>
@@ -56,7 +56,7 @@ function Sidebar() {
                         className="nav-item nav-link d-flex align-items-center"
                         href="#"
                       >
-                        &nbsp; Your Library
+                        <Book size={35} />&nbsp; Your Library
                       </a>
                     </li>
                     <li>

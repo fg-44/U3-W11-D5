@@ -1,6 +1,6 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 
-import playerReducer from './features/playerSlice'
+import playerReducer from './store'
 
 const bigReducer = combineReducers({
     player: playerReducer,

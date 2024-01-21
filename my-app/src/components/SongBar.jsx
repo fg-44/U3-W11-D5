@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 /* IMPORTA DA ICONE */
 
+import { ArrowRight } from 'react-bootstrap-icons';
 
 
 function SongBar() {
@@ -19,7 +20,7 @@ function SongBar() {
           <div class="col-6 col-md-4 playerControls">
             <div class="d-flex">
             <a href="#">
-     <Button className="btn btn-primary" ></Button>
+     <Button className="btn btn-primary" ><ArrowRight color="royalblue" size={96} /></Button>
 </a>
 
               <a href="#">
