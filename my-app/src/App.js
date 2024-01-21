@@ -5,7 +5,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 /* IMPORTA PAGINA */
-import Discover from "./pages/Discover";
+import { Discover } from "./pages/Discover";
 
 /*IMPORTA COMPONENT */
 import Sidebar from "./components/Sidebar";

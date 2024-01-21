@@ -1,15 +1,12 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import playerReducer from './Features/playerSlice'
+import { Api } from '../redux/Fetch'
 
-const bigReducer = combineReducers({
+
+export const store = configureStore({
   reducer: {
-    player: playerReducer,
-  }
-
-})
-
-const store = configureStore({
-  reducer: bigReducer,
-})
-
-export default store
+  [Api.reducerPath]: Api.reducer,
+  player: playerReducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(Api.middleware),
+});

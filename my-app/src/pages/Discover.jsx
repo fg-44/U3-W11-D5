@@ -8,10 +8,15 @@ import Col from "react-bootstrap/Col";
 import Link from "react-bootstrap/NavLink";
 
 /* IMPORTA COMPONENT */
-
+import { useRockSectionQuery } from "../redux/Fetch";
 import SongCard from '../components/SongCard'
 
-const Discover = () => {
+
+
+export const Discover = () => {
+
+  const { data } = useRockSectionQuery();
+
     return (
       <Container fluid="md">
         <Row>
@@ -56,7 +61,7 @@ const Discover = () => {
                     className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
                     id="rockSection"
                   >
-                    {[1, 2, 3, 4 ].map((song, i) => (
+                    {data.map((song, i) => (
                       <SongCard key={song.key} song={song} i={i} />
                     ))}
                   </Col>
@@ -73,7 +78,7 @@ const Discover = () => {
                     className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
                     id="popSection"
                   >
-                    {[1, 2, 3, 4 ].map((song, i) => (
+                    {data.map((song, i) => (
                       <SongCard key={song.key} song={song} i={i} />
                     ))}
                   </Col>
@@ -89,7 +94,7 @@ const Discover = () => {
                     className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
                     id="hipHopSection"
                   >
-                    {[1, 2, 3, 4 ].map((song, i) => (
+                    {data.map((song, i) => (
                       <SongCard key={song.key} song={song} i={i} />
                     ))}
                   </Col>
@@ -106,4 +111,4 @@ const Discover = () => {
     );
   };
 
-export default Discover
+
