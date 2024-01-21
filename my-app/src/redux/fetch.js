@@ -1,6 +1,6 @@
 import axios from "axios";
 import store from "./store.js";
-import { createApi, fetchBaseQuery } from "@redux/toolkit/query/react";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import artistCard from "../assets/component/ArtistCard.js";
 
 

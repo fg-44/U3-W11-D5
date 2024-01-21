@@ -2,6 +2,9 @@ import React from "react";
 
 /* BOOSTRAP */
 
+import Button from 'react-bootstrap/Button';
+
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,8 +20,8 @@ function Sidebar() {
             className="navbar navbar-expand-md fixed-left justify-content-between"
             id="sidebar"
           >
-            <div class="container flex-column align-items-start">
-              <a class="navbar-brand" href="index.html">
+            <div className="container flex-column align-items-start">
+              <a className="navbar-brand" href="index.html">
                 <img
                   src="assets/logo/logo.png"
                   alt="Spotify Logo"
@@ -27,7 +30,7 @@ function Sidebar() {
                 />
               </a>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarNavAltMarkup"
@@ -35,29 +38,29 @@ function Sidebar() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <ul>
                     <li>
                       <a
-                        class="nav-item nav-link d-flex align-items-center"
+                        className="nav-item nav-link d-flex align-items-center"
                         href="#"
                       >
-                        <i class="bi bi-house-door-fill"></i>&nbsp; Home
+                        &nbsp; Home
                       </a>
                     </li>
                     <li>
                       <a
-                        class="nav-item nav-link d-flex align-items-center"
+                        className="nav-item nav-link d-flex align-items-center"
                         href="#"
                       >
-                        <i class="bi bi-book-fill"></i>&nbsp; Your Library
+                        &nbsp; Your Library
                       </a>
                     </li>
                     <li>
-                      <form class="input-group mt-3" onsubmit="search(event)">
+                      <form className="input-group mt-3" onsubmit="search(event)">
                         <input
                           type="text"
                           class="form-control"
@@ -67,12 +70,12 @@ function Sidebar() {
                           aria-describedby="basic-addon2"
                         />
                         <div class="input-group-append">
-                          <button
-                            class="btn btn-outline-secondary btn-sm h-100"
+                          <Button
+                            className="btn btn-outline-secondary btn-sm h-100"
                             type="submit"
                           >
                             GO
-                          </button>
+                          </Button>
                         </div>
                       </form>
                     </li>
@@ -81,12 +84,12 @@ function Sidebar() {
               </div>
             </div>
             <div class="nav-btn">
-              <button class="btn signup-btn" type="button">
+              <Button className="btn signup-btn" type="button">
                 Sign Up
-              </button>
-              <button class="btn login-btn" type="button">
+              </Button>
+              <Button className="btn login-btn" type="button">
                 Login
-              </button>
+              </Button>
               <a href="#">Cookie Policy</a> |<a href="#"> Privacy</a>
             </div>
           </Navbar>

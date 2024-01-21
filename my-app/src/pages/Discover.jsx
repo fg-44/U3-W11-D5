@@ -3,7 +3,7 @@ import React from "react";
 
 /* COMPONENTI */
 
-import SongCard from "../component/SongCard";
+import SongCard from "../components/SongCard";
 
 /* BOOSTRAP */
 
